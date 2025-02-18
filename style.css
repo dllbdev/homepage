@@ -1,6 +1,6 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,27 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Red Hat Text", serif;
+  font-optical-sizing: auto;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 html {
@@ -17,6 +37,7 @@ html {
 
 p {
   color: rgb(85, 85, 85);
+  font-size: larger;
 }
 
 /* TRANSITION */
@@ -179,6 +200,19 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  transform: translateY(20px);
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section__text p {
@@ -434,4 +468,18 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
