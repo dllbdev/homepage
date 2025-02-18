@@ -37,7 +37,6 @@ html {
 
 p {
   color: rgb(85, 85, 85);
-  font-size: larger;
 }
 
 /* TRANSITION */
@@ -351,6 +350,7 @@ section {
 .text-container {
   align-self: center;
   text-align: center;
+  font-size: large;
 }
 
 /* EXPERIENCE SECTION */

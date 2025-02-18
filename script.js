@@ -26,16 +26,6 @@ function typeWriter(element, text, speed) {
   type();
 }
 
-// Call the typeWriter function when the DOM is fully loaded with 1 sec delay.
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    const element = document.querySelector(".text__p2");
-    const text = "Software Developer";
-    const speed = 100;
-    typeWriter(element, text, speed);
-  }, 1000);
-});
-
 // -------------------------------------------------
 // Particles Effect
 // -------------------------------------------------
@@ -110,5 +100,15 @@ window.addEventListener("resize", () => {
   init();
 });
 
-init();
-animate();
+// Call functions when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // Call the typeWriter function after 1 sec delay.
+  setTimeout(function () {
+    const element = document.querySelector(".text__p2");
+    const text = "Software Developer";
+    const speed = 100;
+    typeWriter(element, text, speed);
+  }, 1000);
+  init();
+  animate();
+});
