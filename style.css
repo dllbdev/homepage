@@ -12,6 +12,12 @@ body {
   font-optical-sizing: auto;
 }
 
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: grey;
+}
+
 canvas {
   position: absolute;
   top: 0;
@@ -140,6 +146,9 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
 }
 
 .hamburger-icon.open span:first-child {
