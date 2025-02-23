@@ -252,7 +252,7 @@ section {
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 2.5rem;
 }
 
 /* BUTTONS */
@@ -364,7 +364,7 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+#skills {
   position: relative;
 }
 
@@ -381,6 +381,13 @@ section {
   flex-direction: column;
 }
 
+.details-container-skills {
+  padding: 1.5rem;
+  flex: auto;
+  background: white;
+  text-align: center;
+}
+
 .article-container {
   display: flex;
   text-align: initial;
@@ -390,15 +397,35 @@ section {
   justify-content: space-around;
 }
 
+.article-container article div {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: auto;
+}
+
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 article .icon {
   cursor: default;
+  height: 3rem;
+}
+
+#skills article:hover {
+  animation: zoomIn 0.3s forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
 
 /* PROJECTS SECTION */
@@ -439,7 +466,9 @@ article .icon {
 
 .contact-info-upper-container {
   display: flex;
-  justify-content: space-evenly;
+  width: 20%;
+  align-self: center;
+  flex-direction: column;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -461,10 +490,6 @@ article .icon {
 
 .contact-icon {
   cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
 }
 
 /* FOOTER SECTION */
