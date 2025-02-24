@@ -96,7 +96,7 @@
   .title {
     font-size: 2rem;
   }
-  .text-container {
+  .text-container, .text-container-research {
     text-align: justify;
   }
 }

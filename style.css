@@ -511,6 +511,17 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+/* RESEARCH SECTION */
+
+#research {
+  position: relative;
+}
+
+.text-container-research {
+  text-align: justify;
+  font-size: large;
+}
+
 /* CONTACT */
 
 #contact {
