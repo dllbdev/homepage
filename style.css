@@ -14,7 +14,7 @@ body {
 
 .underline {
   text-decoration: underline;
-  text-underline-offset: 0.5rem;
+  text-underline-offset: 0.2rem;
   text-decoration-color: grey;
 }
 
@@ -416,15 +416,71 @@ article .icon {
 }
 
 #skills article:hover {
-  animation: zoomIn 0.3s forwards;
+  animation: zoomIn1 0.3s forwards;
 }
 
-@keyframes zoomIn {
+#skills article {
+  animation: zoomOut1 0.3s forwards;
+}
+
+#projects .details-container:hover {
+  animation: zoomIn2 0.3s forwards;
+}
+
+#projects .details-container {
+  animation: zoomOut2 0.3s forwards;
+}
+
+#contact .contact-info-upper-container:hover {
+  animation: zoomIn2 0.3s forwards;
+}
+
+#contact .contact-info-upper-container {
+  animation: zoomOut2 0.3s forwards;
+}
+
+#about .details-container:hover {
+  animation: zoomIn2 0.3s forwards;
+}
+
+#about .details-container {
+  animation: zoomOut2 0.3s forwards;
+}
+
+
+@keyframes zoomIn1 {
   from {
     transform: scale(1);
   }
   to {
     transform: scale(1.2);
+  }
+}
+
+@keyframes zoomOut1 {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes zoomOut2 {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
