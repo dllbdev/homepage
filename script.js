@@ -100,8 +100,20 @@ window.addEventListener("resize", () => {
   init();
 });
 
+/**
+ * Toggles between light mode and dark mode.
+ */
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle("dark-mode");
+  body.classList.toggle("light-mode");
+  localStorage.setItem("theme", body.classList.contains("dark-mode") ? "dark" : "light");
+}
+
 // Call functions when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  document.body.classList.add(savedTheme + "-mode");
   // Call the typeWriter function after 1 sec delay.
   setTimeout(function () {
     const element = document.querySelector(".text__p2");

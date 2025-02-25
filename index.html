@@ -19,6 +19,12 @@
     />
   </head>
   <body>
+    <div class="switch-container">
+      <label class="switch">
+        <input type="checkbox" onclick="toggleTheme()" />
+        <span class="slider"></span>
+      </label>
+    </div>
     <nav id="desktop-nav">
       <div class="logo">DLB</div>
       <div>
@@ -70,18 +76,28 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
+          <!-- <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/dankollb/'"
-          />
-          <img
+          /> -->
+          <i 
+            alt="My LinkedIn profile"
+            class="fas fa-brands fa-linkedin-in fa-2xl icon"
+            onclick="location.href='https://www.linkedin.com/in/dankollb/'">
+          </i>
+          <!-- <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/dllbdev/'"
-          />
+          /> -->
+          <i
+            alt="My Github profile" 
+            class="fa-brands fa-square-github fa-2xl icon"
+            onclick="location.href='https://github.com/dllbdev/'">
+          </i>
         </div>
       </div>
     </section>
@@ -147,12 +163,16 @@
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#skills'"
-      />
+      /> -->
+      <i 
+        class="fas fa-solid fa-angles-down fa-2xl arrow" 
+        onclick="location.href='./#skills'">
+      </i>
     </section>
     <section id="skills">
       <p class="section__text__p1">Explore My</p>
@@ -538,12 +558,16 @@
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-      />
+      /> -->
+      <i 
+        class="fas fa-solid fa-angles-down fa-2xl arrow" 
+        onclick="location.href='./#projects'">
+      </i>
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My</p>
@@ -599,12 +623,16 @@
           </div>
         </div>
       </div>
-      <img
+     <!--  <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#research'"
-      />
+      /> -->
+      <i 
+        class="fas fa-solid fa-angles-down fa-2xl arrow" 
+        onclick="location.href='./#research'">
+      </i>
     </section>
     <section id="research">
       <p class="section__text__p1">Check My</p>
@@ -624,12 +652,16 @@
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
-      />
+      /> -->
+      <i 
+        class="fas fa-solid fa-angles-down fa-2xl arrow" 
+        onclick="location.href='./#contact'">
+      </i>
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
