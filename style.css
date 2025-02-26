@@ -606,7 +606,7 @@ article .icon {
 
 .contact-info-upper-container {
   display: flex;
-  width: 20%;
+  width: 30%;
   align-self: center;
   flex-direction: column;
   border-radius: 2rem;
@@ -658,7 +658,7 @@ footer p {
 }
 
 .switch-container {
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 1rem;
   z-index: 1000;
@@ -667,7 +667,7 @@ footer p {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
+  width: 70px;
   height: 34px;
 }
 
@@ -701,10 +701,22 @@ footer p {
   border-radius: 50%;
 }
 
+.slider .icon-day {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+}
+
+.slider .icon-night {
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+}
+
 input:checked + .slider {
   background-color: #2196F3;
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(36px);
 }
