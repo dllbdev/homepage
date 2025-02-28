@@ -339,6 +339,16 @@ section {
   height: 2.5rem;
 }
 
+/* IMAGES */
+
+.light-mode #skills .invert{
+  filter: invert(0%);
+}
+
+.dark-mode #skills .invert{
+  filter: invert(100%);
+}
+
 /* BUTTONS */
 
 .btn-container {
