@@ -703,7 +703,7 @@ footer p {
 }
 
 .switch-container {
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   z-index: 1000;
@@ -712,7 +712,7 @@ footer p {
 .switch {
   position: relative;
   display: inline-block;
-  width: 70px;
+  width: 60px;
   height: 34px;
 }
 
@@ -763,5 +763,5 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(36px);
+  transform: translateX(26px);
 }
