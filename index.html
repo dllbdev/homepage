@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <div class="switch-container">
+    <label class="switch">
+      <input type="checkbox" onclick="toggleTheme()" />
+      <span class="slider">
+        <i class="fas fa-solid fa-moon fa-lg icon-night" style="color: white"></i>
+        <i class="fas fa-solid fa-sun fa-lg icon-day" style="color: white"></i>
+      </span>
+    </label>
+  </div>
+  <nav id="desktop-nav">
+    <div class="logo">DLB</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">DLB</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#research" onclick="toggleMenu()">Research</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <!-- <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Danko Lobos profile picture" />
+      </div> -->
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Danko</h1>
+      <p class="section__text__p2">
+        <span class="text__p2"></span><span class="cursor">|</span>
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/danko-cv.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <!-- <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/dankollb/'"
+          /> -->
+        <i alt="My LinkedIn profile" class="fas fa-brands fa-linkedin-in fa-2xl icon"
+          onclick="location.href='https://www.linkedin.com/in/dankollb/'">
+        </i>
+        <!-- <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/dllbdev/'"
+          /> -->
+        <i alt="My Github profile" class="fa-brands fa-square-github fa-2xl icon"
+          onclick="location.href='https://github.com/dllbdev/'">
+        </i>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="text-container">
+          <p>
+            Graduate in <b>Computer Science Engineering</b> with strong experience in 
+            <b>IT project management</b>, <b>software development</b>, <b>support engineering</b> 
+            and <b>IT system administration</b>. At internship, developed AI solutions 
+            in computer vision for industrial safety.
+          </p>
+          <br />
+          <p>
+            Huge fan of new technologies and their responsible use. <br />
+            Lifelong learner, focused on constant growth as a professional and as a person.
+          </p>
+          <br />
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <i class="fas fa-solid fa-code fa-2xl"></i>
+            <h2><br />Work</h2>
+            <br />
+            <p>
+              3+ years in <b>Software Development</b>: <br />
+              web development, data science, AI solutions and automation. <br />
+              <br />
+              1+ year in <b>Support Engineering</b>: <br />
+              troubleshooting, technical assistance, database management, network and system monitoring.
+            </p>
+          </div>
+          <div class="details-container">
+            <i class="fas fa-graduation-cap fa-2xl"></i>
+            <h2><br />Education</h2>
+            <br />
+            <p>
+              <b>Computer Science Engineering</b> <br />
+              @ Metropolitan Univesity of Technology (UTEM) &mdash; Class of 2026 <br />
+              <br />
+              Academic Degree: <i>Bachelor of Science in Computer Science</i>.
+            </p>
+          </div>
+          <div class="details-container">
+            <i class="fas fa-solid fa-person-chalkboard fa-2xl"></i>
+            <h2><br />Academy</h2>
+            <br />
+            <p>
+              4+ years as <b>Teacher Assistant</b> of:
+              <br />
+              <em> Algorithms & Programming </em><br />
+              <em> Data Structures </em> <br />
+              <em> Database Systems </em> <br />
+              <br />
+              1 <a href="#research">paper</a> published in the ACM journal.
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      /> -->
+    <i class="fas fa-solid fa-angles-down fa-2xl arrow" onclick="location.href='./#skills'">
+    </i>
+  </section>
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container-skills">
+          <h2 class="experience-sub-title">Programming</h2>
+          <div class="article-container">
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                alt="Python badge" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                alt="Java badge" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C badge"
+                class="icon" />
+              <div>
+                <h3>C</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                alt="C++ badge" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                alt="C# badge" class="icon" />
+              <div>
+                <h3>C#</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                alt="Javascript badge" class="icon" />
+              <div>
+                <h3>Javascript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg"
+                alt="Bash badge" class="icon invert" />
+              <div>
+                <h3>Bash</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git badge"
+                class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container-skills">
+          <h2 class="experience-sub-title">Libraries & Frameworks</h2>
+          <div class="article-container">
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg"
+                alt="JUnit badge" class="icon" />
+              <div>
+                <h3>JUnit</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+                alt="Numpy badge" class="icon" />
+              <div>
+                <h3>Numpy</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                alt="Pandas badge" class="icon invert" />
+              <div>
+                <h3>Pandas</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
+                alt="Matplotlib badge" class="icon" />
+              <div>
+                <h3>Matplotlib</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+                alt="Scikit badge" class="icon" />
+              <div>
+                <h3>Scikitlearn</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
+                alt="Flask badge" class="icon invert" />
+              <div>
+                <h3>Flask</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+                alt="FastAPI badge" class="icon" />
+              <div>
+                <h3>FastAPI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container-skills">
+          <h2 class="experience-sub-title">Frontend</h2>
+          <div class="article-container">
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                alt="HTML badge" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                alt="CSS badge" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                alt="TypeScript badge" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+                alt="Angular badge" class="icon" />
+              <div>
+                <h3>Angular</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+                alt="Experience icon" class="icon" />
+              <div>
+                <h3>Vue</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+                alt="Experience icon" class="icon" />
+              <div>
+                <h3>SaSS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container-skills">
+          <h2 class="experience-sub-title">Backend</h2>
+          <div class="article-container">
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                alt="MySQL badge" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL badge" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                alt="MS SQL badge" class="icon" />
+              <div>
+                <h3>SQL Server</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB badge" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                alt="Postman badge" class="icon" />
+              <div>
+                <h3>Postman</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                alt="Docker badge" class="icon" />
+              <div>
+                <h3>Docker</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container-skills">
+          <h2 class="experience-sub-title">OS</h2>
+          <div class="article-container">
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg"
+                alt="Windows badge" class="icon" />
+              <div>
+                <h3>Windows</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg"
+                alt="Ubuntu badge" class="icon" />
+              <div>
+                <h3>Ubuntu</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-plain.svg"
+                alt="Linux badge" class="icon invert" />
+              <div>
+                <h3>Linux</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redhat/redhat-plain.svg"
+                alt="RedHat badge" class="icon" />
+              <div>
+                <h3>RHEL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+    <i class="fas fa-solid fa-angles-down fa-2xl arrow" onclick="location.href='./#projects'">
+    </i>
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-flask-crud.png" alt="Project Flask CRUD" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Simple Inventory CRUD App
+          </h2>
+          <p>
+            A simple CRUD web app for inventory and sales recording using
+            Flask and MySQL. This was a semestral project I created as TA for
+            the Database Systems course at UTEM. I emulated the web app in a
+            simple static website as a live demo.
+          </p>
+          <br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/dllbdev/flask-mysql-crud'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://dllbdev.github.io/flask-mysql-crud/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-pasalapalabra.png" alt="Project Flask CRUD" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            PasaLaPalabra
+          </h2>
+          <p>
+            This project is an interactive browser game inspired by a popular TV show,
+            where players must correctly answer definitions to complete a round.
+          </p>
+          <br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/dllbdev/PasaLaPalabra'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://dllbdev.github.io/PasaLaPalabra/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-latinity.png" alt="Latinity Website" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Latinity Conferences Website
+          </h2>
+          <p>
+            I created a <em class="underline">minimalist</em> and
+            <em class="underline">responsive</em> website for LATINITY
+            conferences. My main task was to design the site and integrate
+            different resources of the organization. I worked under the
+            direction of the co-founder: Joselyn Simmonds, Ph.D.
+          </p>
+          <br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://latinity.info/'">
+              Live Site
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#research'"
+      /> -->
+    <i class="fas fa-solid fa-angles-down fa-2xl arrow" onclick="location.href='./#research'">
+    </i>
+  </section>
+  <section id="research">
+    <p class="section__text__p1">Check My</p>
+    <h1 class="title">Research</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="text-container-research">
+          <ol>
+            <li>
+              <span style="color: gray">Jérémy Barbay, Daniel Freire-Fernández, and Danko Lobos-Bustamante.</span>
+              2023.
+              <em>
+                <a href="https://doi.org/10.1145/3565995.3566029.">Popping Up Balloons for Science: a Research
+                  Proposal.</a>
+              </em>
+              In Proceedings of the Ninth International Conference on Animal-Computer Interaction (ACI '22).
+              Association for Computing Machinery, New York, NY, USA, Article 12, 1–5.
+              <a href="https://doi.org/10.1145/3565995.3566029.">https://doi.org/10.1145/3565995.3566029.</a>
+            </li>
+          </ol>
+          <br />
+        </div>
+      </div>
+    </div>
+    <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
+    <i class="fas fa-solid fa-angles-down fa-2xl arrow" onclick="location.href='./#contact'">
+    </i>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <br />
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <i class="fas fa-solid fa-envelope fa-xl"></i>
+        <p><a href="mailto:dllb.deb@proton.me">Email</a></p>
+      </div>
+    </div>
+    <br />
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <i class="fa-brands fa-linkedin fa-xl"></i>
+        <p><a href="https://www.linkedin.com/in/dankollb/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Danko Lobos. All Rights Reserved.</p>
+  </footer>
+  <canvas id="backgroundCanvas"></canvas>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/e364023ec0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
