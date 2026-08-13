@@ -1,3 +1,28 @@
+// -------------------------------------------------
+// Section Navigation
+// -------------------------------------------------
+const sectionOrder = ["profile", "about", "skills", "projects", "research", "contact"];
+
+/**
+ * Jumps to the previous (-1) or next (1) section relative to whichever section is currently in view.
+ */
+function navigateSection(direction) {
+  const scrollPos = window.scrollY + window.innerHeight / 3;
+  let current = 0;
+  sectionOrder.forEach((id, index) => {
+    const el = document.getElementById(id);
+    if (el && el.offsetTop <= scrollPos) current = index;
+  });
+  const next = Math.min(sectionOrder.length - 1, Math.max(0, current + direction));
+  const targetId = sectionOrder[next];
+  if (next === 0) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+  }
+  history.pushState(null, "", next === 0 ? location.pathname + location.search : "#" + targetId);
+}
+
 /**
  * Targets elements and whenever are clicked, toggles the class 'open' to show/hide the menu.
  */
@@ -114,6 +139,7 @@ function toggleTheme() {
 document.addEventListener("DOMContentLoaded", function () {
   const savedTheme = localStorage.getItem("theme") || "light";
   document.body.classList.add(savedTheme + "-mode");
+  document.getElementById("theme-toggle").checked = savedTheme === "dark";
   // Call the typeWriter function after 1 sec delay.
   setTimeout(function () {
     const element = document.querySelector(".text__p2");
