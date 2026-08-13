@@ -8,7 +8,7 @@
   }
   #contact,
   #projects {
-    height: fit-content;
+    min-height: auto;
   }
 }
 
@@ -31,7 +31,7 @@
   }
   section,
   .section-container {
-    height: fit-content;
+    min-height: auto;
   }
   section {
     margin: 0 5%;
@@ -59,7 +59,7 @@
     font-size: 1rem;
   }
   footer nav {
-    height: fit-content;
+    height: auto;
     margin-bottom: 2rem;
   }
   .about-containers,
