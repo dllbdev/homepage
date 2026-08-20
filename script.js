@@ -15,12 +15,17 @@ function navigateSection(direction) {
   });
   const next = Math.min(sectionOrder.length - 1, Math.max(0, current + direction));
   const targetId = sectionOrder[next];
+  const targetEl = document.getElementById(targetId);
   if (next === 0) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   } else {
-    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+    targetEl.scrollIntoView({ behavior: "smooth" });
   }
-  history.pushState(null, "", next === 0 ? location.pathname + location.search : "#" + targetId);
+  // Deferred so pushState (a history/layout change) doesn't run in the same tick as
+  // scrollIntoView and cut the smooth-scroll animation short.
+  setTimeout(() => {
+    history.pushState(null, "", next === 0 ? location.pathname + location.search : "#" + targetId);
+  }, 0);
 }
 
 /**
